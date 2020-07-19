@@ -61,7 +61,7 @@ class RuntimeOptions(pipeline_options.PipelineOptions):
         parser.add_value_provider_argument(f'--{c._OPTION_COHORT_END_DATE}')
         parser.add_value_provider_argument(f'--{c._OPTION_HOLDOUT_END_DATE}')
         parser.add_value_provider_argument(
-            f'--{c._OPTION_PREDICTION_PERIOD}', default=52, type=int)
+            f'--{c._OPTION_PREDICTION_PERIOD}', default=4, type=int)
         parser.add_value_provider_argument(
             f'--{c._OPTION_OUTPUT_SEGMENTS}', default=5, type=int)
         parser.add_value_provider_argument(
